@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import NavItem from "~/components/navbar/NavItem";
+import NavItem from "~/components/navbar/jef/NavItem";
 
 export default {
   components: {NavItem},

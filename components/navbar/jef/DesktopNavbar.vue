@@ -18,9 +18,9 @@
 </style>
 
 <script>
-import NavItemTitle from "~/components/navbar/NavItem";
-import NavItemBlock from "~/components/navbar/NavItemBlock";
-import NavItem from "~/components/navbar/NavItem";
+import NavItemTitle from "~/components/navbar/jef/NavItem";
+import NavItemBlock from "~/components/navbar/jef/NavItemBlock";
+import NavItem from "~/components/navbar/jef/NavItem";
 
 export default {
   components: {NavItem, NavItemBlock, NavItemTitle},

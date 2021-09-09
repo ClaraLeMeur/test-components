@@ -83,6 +83,6 @@ import MobileNavbar from "~/components/navbar/jef/MobileNavbar";
 
 export default {
   components: {MobileNavbar, DesktopNavbar},
-  name: 'sidebarLayout',
+  name: 'sidebarJefLayout',
 }
 </script>

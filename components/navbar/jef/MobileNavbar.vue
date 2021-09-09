@@ -66,7 +66,7 @@
 </template>
 
 <script>
-import DesktopNavbar from "~/components/navbar/DesktopNavbar";
+import DesktopNavbar from "~/components/navbar/jef/DesktopNavbar";
 export default {
   components: {DesktopNavbar},
   data: function () {

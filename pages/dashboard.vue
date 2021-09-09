@@ -1,6 +1,7 @@
 <template>
   <div>
     Dashboard
+    Vue
   </div>
 </template>
 
@@ -11,3 +12,9 @@ name: 'dashboard',
 alias: [{path: '/dashboard'}]
 }
 </router>
+
+<script>
+export default {
+  layout: 'sidebarJefLayout',
+}
+</script>
