@@ -2,8 +2,8 @@
   <nav class="fixed w-full pt-4 bg-transparent z-50 justify-end">
     <div class="flex items-center text-black justify-end">
       <!-- Mobile toggle -->
-      <div class="hover:text-primary-600 px-4 flex items-center h-8">
-        <button @click="drawer">
+      <div v-if="!isOpen" class="hover:text-primary-600 px-4 flex items-center h-8">
+        <button @click="drawer" class="focus:outline-none ">
           <svg
             class="h-8 w-8 fill-current"
             fill="none"
@@ -14,6 +14,24 @@
             stroke="currentColor"
           >
             <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <div v-else class="w-full z-40">
+        <button
+          class="absolute top-0 right-0 mt-4 mr-4 appearance-none focus:outline-none "
+          @click="isOpen = false"
+        >
+          <svg
+            class="w-8 h-8 text-white"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
       </div>
@@ -41,39 +59,16 @@
       </transition>
 
       <!-- Drawer Menu -->
-      <aside
-        class="transform top-0 left-0 bg-primary-700 fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30"
-        :class="isOpen ? 'translate-x-0' : '-translate-x-full'"
-      >
-        <div class="w-full">
-          <button
-            class="absolute top-0 right-0 mt-4 mr-4"
-            @click="isOpen = false"
-          >
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-          </button>
-        </div>
-        <desktop-sidebar></desktop-sidebar>
-      </aside>
+      <desktop-navbar class="transform top-0 left-0 bg-primary-700 fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30"
+               :class="isOpen ? 'translate-x-0' : '-translate-x-full'"></desktop-navbar>
     </div>
   </nav>
 </template>
 
 <script>
-import DesktopSidebar from './DesktopSidebar.vue'
-
+import DesktopNavbar from "~/components/navbar/DesktopNavbar";
 export default {
-  components: { DesktopSidebar },
+  components: {DesktopNavbar},
   data: function () {
     return {
       isOpen: false,

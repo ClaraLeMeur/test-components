@@ -1,8 +1,8 @@
 <template>
   <div class="font-inter h-screen">
     <div class="flex h-screen">
-      <desktop-sidebar class="hidden lg:block"/>
-      <navbar class="lg:hidden"></navbar>
+      <desktop-navbar class="hidden lg:block"/>
+      <mobile-navbar class="lg:hidden"></mobile-navbar>
       <div class="content bg-gray-200">
         <nuxt/>
       </div>
@@ -75,18 +75,14 @@ html {
   color: #fff;
   background-color: #35495e;
 }
-
-label {
-  user-select: none;
-}
 </style>
 
 <script>
-import DesktopSidebar from '~/components/navbar/DesktopSidebar'
-import Navbar from '~/components/navbar/Navbar.vue'
+import DesktopNavbar from "~/components/navbar/jef/DesktopNavbar";
+import MobileNavbar from "~/components/navbar/jef/MobileNavbar";
 
 export default {
-  components: {DesktopSidebar, Navbar},
-  name: 'sidebar',
+  components: {MobileNavbar, DesktopNavbar},
+  name: 'sidebarLayout',
 }
 </script>

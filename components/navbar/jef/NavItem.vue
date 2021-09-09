@@ -1,10 +1,6 @@
 <template>
-  <div v-if="arrowBool && opened" class="flex flex-row items-center p-3 hover:bg-primary-500 hover:text-white cursor-pointer w-full"
-       v-bind:class="[
-      { 'bg-primary-500': $route.name === route },
-      { 'bg-primary-700': $route.name !== route },
-    ]">
-    <div class="flex flex-none pr-2" >
+  <div class="flex flex-row items-center p-3 hover:bg-primary-500 hover:text-white cursor-pointer w-full" @click="$parent.$emit('item-click', route, menuIdx, itemIdx, opened)">
+    <div class="flex flex-none pr-2">
       <img v-if="linkSvg !== ''" class="w-6" :src="linkSvg"/>
     </div>
     <div class="flex flex-grow">
@@ -43,7 +39,8 @@ export default {
     },
     linkSvg : String,
     route: String,
-    open: false,
+    menuIdx: Number,
+    itemIdx: Number,
   },
 }
 </script>
