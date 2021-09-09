@@ -1,8 +1,9 @@
 <template>
-  <div>
-    Dashboard
-    Vue
-  </div>
+  <section class="h-full">
+    <div class="flex flex-col justify-center items-center w-full py-10">
+      <h1 class="flex text-primary-500 font-bold text-2xl">Dashboard</h1>
+    </div>
+  </section>
 </template>
 
 <router>
@@ -15,6 +16,6 @@ alias: [{path: '/dashboard'}]
 
 <script>
 export default {
-  layout: 'sidebarJefLayout',
+  layout: 'navbarTalkmeLayout',
 }
 </script>

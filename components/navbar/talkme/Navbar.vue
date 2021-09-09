@@ -4,11 +4,7 @@
       <!-- Header logo -->
       <div>
         <nuxt-link to="/">
-          <img
-              class="h-6 cursor-pointer"
-              src="/img/talkme-logo.svg"
-              alt="TalkMe"
-          />
+          <img class="h-6 cursor-pointer" src="/logo.svg" alt="logo" />
         </nuxt-link>
       </div>
 
@@ -17,10 +13,10 @@
       <link-navbar class="hidden lg:block" title="Automatiser" link="automatiser"></link-navbar>
       <link-navbar class="hidden lg:block" title="Rationaliser" link="rationaliser"></link-navbar>
       <link-navbar class="hidden lg:block" title="Nos technologies" link="technologies"></link-navbar>
-      <!-- <link-navbar  class="hidden lg:block" title="Blog" redirect="https://blog.talkme.tech/"></link-navbar> -->
+       <link-navbar  class="hidden lg:block" title="Blog" redirect="https://blog.talkme.tech/"></link-navbar>
       <div
           @click="$router.push({ name: 'contact' })"
-          class="bg-orangetm-500 hover:bg-orangetm-600 px-3 py-2 rounded-3xl text-white font-semibold hidden lg:block cursor-pointer"
+          class="bg-primary-500 hover:bg-primary-600 px-3 py-2 rounded-3xl text-white font-semibold hidden lg:block cursor-pointer"
       >Nous contacter
       </div>
 
@@ -85,44 +81,25 @@
             @click="isOpen = false"
             class="flex w-full items-center p-4 border-b">
           <nuxt-link to="/">
-            <img
-                class="h-10 cursor-pointer"
-                src="/img/talkme-logo.svg"
-                alt="TalkMe"/>
+            <img class="h-10 cursor-pointer" src="/logo.svg" alt="TalkMe"/>
           </nuxt-link>
         </span>
 
-        <ul>
-          <li>
-            <link-navbar title="Dématérialiser" link="dematerialiser" @close-navbar="isOpen=false"></link-navbar>
-          </li>
-          <li>
-            <link-navbar title="Automatiser" link="automatiser" @close-navbar="isOpen=false"></link-navbar>
-          </li>
-          <li>
+            <link-navbar title="Dashboard" link="dashboard" @close-navbar="isOpen=false"></link-navbar>
+            <link-navbar title="Home" link="/" @close-navbar="isOpen=false"></link-navbar>
             <link-navbar title="Rationaliser" link="rationaliser" @close-navbar="isOpen=false"></link-navbar>
-          </li>
-          <li>
             <link-navbar title="Nos technologies" link="technologies" @close-navbar="isOpen=false"></link-navbar>
-          </li>
-          <!-- <li>
             <link-navbar title="Blog" redirect="https://blog.talkme.tech/"></link-navbar>
-          </li> -->
-          <li>
             <div
                 @click="isOpen = false; $router.push({ name: 'contact' })"
-                class="my-4 text-center font-semibold inline-block bg-orangetm-500 hover:bg-orangetm-600 ml-6 px-3 py-2 rounded-3xl text-white">
+                class="my-4 text-center font-semibold inline-block bg-primary-500 hover:bg-primary-600 ml-6 px-3 py-2 rounded-3xl text-white">
               Nous contacter
-            </div
-            >
-          </li>
-        </ul>
+            </div>
 
-        <div>
+        <div class="px-4">
           <p class="italic text-sm">Suivez-nous :</p>
           <div class="flex space-x-5 mt-4">
-            <a href="https://www.linkedin.com/company/talkmetech/" target="_blank"
-               @click="isOpen=false">
+            <a href="https://www.linkedin.com/company/talkmetech/" target="_blank" @click="isOpen=false">
               <svg aria-hidden="true"
                    focusable="false"
                    data-prefix="fab"
@@ -135,8 +112,7 @@
                       d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
               </svg>
             </a>
-            <a href="https://www.youtube.com/channel/UCtZBDVIKOhVTnH_9YvJ8l1w" target="_blank"
-               @click="isOpen=false">
+            <a href="https://www.youtube.com/channel/UCtZBDVIKOhVTnH_9YvJ8l1w" target="_blank" @click="isOpen=false">
               <svg aria-hidden="true"
                    focusable="false"
                    data-prefix="fab"

@@ -5,13 +5,13 @@
         <div class="grid gap-4 grid-cols-1 sm:grid-cols-3 xl:gap-6 w-full pb-8">
           <img
               class="h-10 cursor-pointer justify-self-center"
-              src="/img/talkme-logo.svg"
+              src="/logo.svg"
               alt="TalkMe"
           />
         </div>
         <div class="grid gap-4 grid-cols-1 sm:grid-cols-3 xl:gap-6 w-full">
           <a
-              class="text-center hover:text-orangetm-500 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              class="text-center hover:text-primary-500 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110"
               target="_blank"
               rel="noopener noreferrer"
               href="http://maps.google.com/?q=Le%20Mans%20Innovation%2057%20Bld%20Demorieux%2072100,%20Le%20Mans"
@@ -19,7 +19,7 @@
             Le Mans Innovation<br/>57 Bld Demorieux<br/>72100, Le Mans
           </a>
           <a
-              class="text-center hover:text-orangetm-500 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              class="text-center hover:text-primary-500 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110"
               target="_blank"
               rel="noopener noreferrer"
               href="http://maps.google.com/?q=76%20place%20du%20Général%20Bonet%2061000,%20Alençon"
@@ -29,13 +29,13 @@
           <div class="text-center transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
             Nicolas Tessier<br/>Co-founder<br/>
             <a
-                class="hover:text-orangetm-500 "
+                class="hover:text-primary-500 "
                 href="mailto:nicolas.tessier@talkme.tech"
             >nicolas.tessier@talkme.tech</a
             >
           </div>
         </div>
-        <div class="flex justify-center items-center pt-6 h-30 text-orangetm-500">
+        <div class="flex justify-center items-center pt-6 h-30 text-primary-500">
           <div class="flex px-2 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
             <a href="https://www.linkedin.com/company/talkmetech/">
               <svg
@@ -76,7 +76,7 @@
           <div class="w-full">&copy; 2021 TalkMe. Tous droits réservés</div>
           <div
               @click="$router.push({ name: 'mentions-legales' })"
-              class="hover:text-orangetm-500 cursor-pointer transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+              class="hover:text-primary-500 cursor-pointer transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
             Mentions légales
           </div>
         </div>
