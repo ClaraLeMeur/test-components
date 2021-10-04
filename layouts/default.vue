@@ -55,8 +55,8 @@
 </style>
 
 <script>
-import FooterBloc from '~/components/navbar/talkme/FooterBloc.vue'
-import Navbar from '~/components/navbar/talkme/Navbar.vue'
+import FooterBloc from '~/components/tm-components/navbar/talkme/FooterBloc.vue'
+import Navbar from '~/components/tm-components/navbar/talkme/Navbar.vue'
 export default {
   components: { Navbar, FooterBloc },
 }

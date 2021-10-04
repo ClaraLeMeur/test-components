@@ -5,7 +5,7 @@
         <div class="grid gap-4 grid-cols-1 sm:grid-cols-3 xl:gap-6 w-full pb-8">
           <img
               class="h-10 cursor-pointer justify-self-center"
-              src="/logo.svg"
+              src="/static/logo.svg"
               alt="TalkMe"
           />
         </div>

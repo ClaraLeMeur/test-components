@@ -47,8 +47,8 @@ html {
 </style>
 
 <script>
-import Navbar from "~/components/navbar/talkme/Navbar";
-import FooterBloc from "~/components/navbar/talkme/FooterBloc";
+import Navbar from "~/components/tm-components/navbar/talkme/Navbar";
+import FooterBloc from "~/components/tm-components/navbar/talkme/FooterBloc";
 export default {
   components: {FooterBloc, Navbar},
   name: 'navbarTalkmeLayout',

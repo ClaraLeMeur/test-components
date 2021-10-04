@@ -78,8 +78,8 @@ html {
 </style>
 
 <script>
-import DesktopNavbar from "~/components/navbar/jef/DesktopNavbar";
-import MobileNavbar from "~/components/navbar/jef/MobileNavbar";
+import DesktopNavbar from "~/components/tm-components/navbar/jef/DesktopNavbar";
+import MobileNavbar from "~/components/tm-components/navbar/jef/MobileNavbar";
 
 export default {
   components: {MobileNavbar, DesktopNavbar},

@@ -4,7 +4,7 @@
       <!-- Header logo -->
       <div>
         <nuxt-link to="/">
-          <img class="h-6 cursor-pointer" src="/logo.svg" alt="logo" />
+          <img class="h-6 cursor-pointer" src="/static/logo.svg" alt="logo" />
         </nuxt-link>
       </div>
 
@@ -81,7 +81,7 @@
             @click="isOpen = false"
             class="flex w-full items-center p-4 border-b">
           <nuxt-link to="/">
-            <img class="h-10 cursor-pointer" src="/logo.svg" alt="TalkMe"/>
+            <img class="h-10 cursor-pointer" src="/static/logo.svg" alt="TalkMe"/>
           </nuxt-link>
         </span>
 
