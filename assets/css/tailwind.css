@@ -26,15 +26,15 @@
 .tm-btn-icon {
   @apply inline-flex items-center;
 }
-.tm-btn-primary {
+.tm-bg-primary {
   @apply bg-primary-500 text-white;
 }
-.tm-btn-green {
+.tm-bg-green {
   @apply bg-green-500 text-white;
 }
-.tm-btn-yellow {
+.tm-bg-yellow {
   @apply bg-yellow-500 text-white;
 }
-.tm-btn-red {
+.tm-bg-red {
   @apply bg-red-500 text-white;
 }

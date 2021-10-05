@@ -33,7 +33,7 @@ export default {
       this.btnStyle = ''
       switch (this.customStyle) {
         case 'btn':
-          this.btnStyle = 'btn btn-primary';
+          this.btnStyle = 'btn tm-bg-primary';
           break;
         case 'pill':
           this.btnStyle = 'btn btn-primary btn-pill';
@@ -53,19 +53,19 @@ export default {
 
       switch (this.tmColor) {
         case 'green':
-          this.btnStyle += ' bg-green-500 text-white';
+          this.btnStyle += ' tm-bg-green-500';
           break;
         case 'yellow':
-          this.btnStyle += ' bg-yellow-500 text-white';
+          this.btnStyle += ' tm-bg-yellow-500';
           break;
         case 'red':
-          this.btnStyle += ' bg-red-500 text-white';
+          this.btnStyle += ' tm-bg-red-500';
           break;
         case 'gray':
-          this.btnStyle += ' bg-gray-500 text-white';
+          this.btnStyle += ' tm-bg-gray-500';
           break;
         case 'black':
-          this.btnStyle += ' bg-black text-white';
+          this.btnStyle += ' tm-bg-black';
           break;
         default:
           this.btnStyle += ' ';

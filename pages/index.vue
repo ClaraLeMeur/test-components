@@ -19,6 +19,7 @@
             <span>Add with svg</span>
           </button>
           <button type="button" class="tm-btn tm-btn-red"><span class="pl-5" style="background: url('/plus.svg') no-repeat left center;">Add</span></button>
+          <tm-plus title="Ajouter un item"></tm-plus>
         </div>
       </div>
 
@@ -67,8 +68,9 @@ alias: [{path: '/index'}]
 import TmBtn from "~/components/tm-components/atomes/TmBtn";
 import TmInput from "~/components/tm-components/atomes/TmInput";
 import TmSelect from "~/components/tm-components/atomes/TmSelect";
+import TmPlus from "~/components/tm-components/atomes/TmPlus";
 export default {
-  components: {TmSelect, TmInput, TmBtn},
+  components: {TmPlus, TmSelect, TmInput, TmBtn},
   data(){
     return {
       foo:null,
